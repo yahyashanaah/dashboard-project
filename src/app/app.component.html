@@ -2,16 +2,17 @@
 
 <main>
   <div id="dashboard">
-    <div class="dashboard-item">
-      <app-server-status></app-server-status>
-    </div>
+    <app-dashboard-item [image]="{src: 'status.png', alt: 'A signal symbol'}" title="Server Status">
+        <app-server-status></app-server-status>
+    </app-dashboard-item>
 
-    <div class="dashboard-item">
+    <app-dashboard-item [image]="{src: 'globe.png', alt: 'A globe'}" title="Traffic">
       <app-traffic></app-traffic>
-    </div>
-
-    <div class="dashboard-item">
-      <app-tickets></app-tickets>
-    </div>
+    </app-dashboard-item>
+    
+    
+      <app-dashboard-item [image]="{src: 'list.png', alt: ''}" title="Support Tickets">
+        <app-tickets></app-tickets>
+      </app-dashboard-item>
   </div>
 </main>

@@ -1,9 +1,4 @@
-<article>
-    <header>
-      <img src="globe.png" alt="A globe" />
-      <h2>Traffic</h2>
-    </header>
-    <div id="traffic">
+<div id="traffic">
       <p>Last 7 days</p>
 
       <div id="chart">
@@ -11,5 +6,4 @@
           <div [style.height]="(dataPoint.value / maxTraffic) * 100 + '%'"></div>
         }
       </div>
-    </div>
-  </article>
+</div>
